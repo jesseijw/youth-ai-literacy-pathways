@@ -205,6 +205,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   height: 100%; display: flex; align-items: center; justify-content: space-between;
 }
 .brand { display: flex; align-items: center; gap: var(--sp-3); font-family: var(--font-display); font-weight: 600; font-size: 1.25rem; color: var(--ink-900); white-space: nowrap; line-height: 1.15; }
+.brand-name { display: flex; flex-direction: column; justify-content: center; line-height: 1.08; }
 .brand-name-line1, .brand-name-line2 { display: block; }
 .brand-mark {
   width: 40px; height: 40px; flex-shrink: 0; border-radius: 50%;
@@ -318,6 +319,13 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .program-index { font-family: var(--font-display); font-size: 2.6rem; color: var(--ink-border); font-weight: 600; line-height: 1; margin-bottom: var(--sp-4); transition: color var(--dur-base) var(--ease); }
 .program-card:hover .program-index { color: var(--accent-500); }
 .program-icon { font-size: 26px; color: var(--blue-700); margin-bottom: var(--sp-4); display: inline-block; }
+
+.impact-grid { display: grid; grid-template-columns: repeat(2, 1fr); border: 2px solid var(--ink-900); }
+.impact-card { padding: var(--sp-8); border-right: 2px solid var(--ink-900); background: var(--paper); }
+.impact-card:last-child { border-right: none; }
+.impact-card .body-sm { margin-top: var(--sp-3); }
+.impact-card .link-underline { margin-top: var(--sp-6); }
+.impact-icon { display: inline-block; margin-bottom: var(--sp-5); color: var(--blue-700); font-size: 28px; }
 
 /* -------------------- 10. CTA -------------------- */
 .cta-section { background: var(--blue-900); border: 3px solid var(--ink-900); padding: var(--sp-20) var(--sp-16); text-align: center; position: relative; overflow: hidden; }
@@ -554,4 +562,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; }
   .principle-item { flex: 1 1 100%; }
+  .impact-grid { grid-template-columns: 1fr; }
+  .impact-card { border-right: none; border-bottom: 2px solid var(--ink-900); }
+  .impact-card:last-child { border-bottom: none; }
+  .navbar .brand-name { transform: translateY(-1px); }
 }
