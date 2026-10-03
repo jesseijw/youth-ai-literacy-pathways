@@ -327,6 +327,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   flex-direction: column; align-items: flex-start;
 }
 .impact-card .heading-h5 { font-size: 1.5rem; }
+.impact-card-image { width: calc(100% + var(--sp-24)); height: 190px; margin: calc(-1 * var(--sp-12)) calc(-1 * var(--sp-12)) var(--sp-7); object-fit: cover; border-bottom: 3px solid var(--ink-900); }
 .impact-card .body-sm { margin-top: var(--sp-4); font-size: 1rem; line-height: 1.7; }
 .impact-card .link-underline { margin-top: auto; padding-top: var(--sp-6); }
 .impact-icon { display: inline-block; margin-bottom: var(--sp-6); color: var(--blue-700); font-size: 36px; }
@@ -591,6 +592,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   .principle-item { flex: 1 1 100%; }
   .impact-grid { grid-template-columns: 1fr; }
   .impact-card { min-height: 240px; padding: var(--sp-8); }
+  .impact-card-image { width: calc(100% + var(--sp-16)); margin: calc(-1 * var(--sp-8)) calc(-1 * var(--sp-8)) var(--sp-6); height: 170px; }
   .alignment-panel { padding: var(--sp-8); }
   .sdg-grid { grid-template-columns: 1fr; gap: var(--sp-8); }
   .sdg-item { align-items: center; text-align: center; }
