@@ -322,12 +322,13 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 .impact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--sp-6); }
 .impact-card {
-  min-height: 280px; padding: var(--sp-12); border: 3px solid var(--ink-900);
+  min-height: 420px; padding: 0; border: 3px solid var(--ink-900); overflow: hidden;
   background: var(--paper); box-shadow: var(--shadow-hard); display: flex;
   flex-direction: column; align-items: flex-start;
 }
 .impact-card .heading-h5 { font-size: 1.5rem; }
-.impact-card-image { width: calc(100% + var(--sp-24)); height: 190px; margin: calc(-1 * var(--sp-12)) calc(-1 * var(--sp-12)) var(--sp-7); object-fit: cover; border-bottom: 3px solid var(--ink-900); }
+.impact-card-image { width: 100%; height: 240px; object-fit: cover; object-position: center; border-bottom: 3px solid var(--ink-900); flex-shrink: 0; }
+.impact-card-content { width: 100%; padding: var(--sp-8); display: flex; flex: 1; flex-direction: column; align-items: flex-start; }
 .impact-card .body-sm { margin-top: var(--sp-4); font-size: 1rem; line-height: 1.7; }
 .impact-card .link-underline { margin-top: auto; padding-top: var(--sp-6); }
 .impact-icon { display: inline-block; margin-bottom: var(--sp-6); color: var(--blue-700); font-size: 36px; }
@@ -591,8 +592,9 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   .hero-actions .btn { width: 100%; }
   .principle-item { flex: 1 1 100%; }
   .impact-grid { grid-template-columns: 1fr; }
-  .impact-card { min-height: 240px; padding: var(--sp-8); }
-  .impact-card-image { width: calc(100% + var(--sp-16)); margin: calc(-1 * var(--sp-8)) calc(-1 * var(--sp-8)) var(--sp-6); height: 170px; }
+  .impact-card { min-height: 390px; }
+  .impact-card-image { height: 220px; }
+  .impact-card-content { padding: var(--sp-6); }
   .alignment-panel { padding: var(--sp-8); }
   .sdg-grid { grid-template-columns: 1fr; gap: var(--sp-8); }
   .sdg-item { align-items: center; text-align: center; }
